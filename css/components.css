@@ -1,0 +1,103 @@
+/* PAGES */
+.home {
+    background-color: brown;
+}
+
+/* HEADER */
+.header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding: 24px 16px;
+    /*border-radius: 0 0 24px 24px;*/
+    /*border-radius: 24px;*/
+    background-color: white;
+    align-items: center;
+}
+.header-nav {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 16px;
+    justify-content: center;
+}
+.header-card {
+    position: relative;
+    white-space: nowrap;
+	padding: clamp(1rem, 1vw, 3rem) clamp(1rem, 2vw, 3rem) clamp(1rem, 1vw, 3rem) clamp(1rem, 2vw, 3rem);
+	border-radius:24px;
+    background-color: brown;
+	transition: box-shadow 0.3s ease, transform 0.3s ease; /* Necessário para a animação quando em hover */
+}
+.header-card:hover {
+	/*box-shadow: 0 16px 40px rgba(0, 0, 0, 0.75); */
+	transform: translateY(-6px);
+}
+.header-text {
+    font-family: bebas neue, sans-serif;
+    font-weight: 200;
+    font-size: clamp(1rem, 2.5vw, 3rem);
+    color: white;
+}
+.header-card.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 70%;              /* começa exatamente no final do card */
+    width: 100%;
+    height: clamp(80px, 6vw, 180px);         /* quanto ele “entra” no main */
+
+    background-color: inherit;
+
+    z-index: 1;
+}
+
+/* FOOTER */
+.footer {
+    background-color: black;
+    padding: 32px;
+    color: white;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 120px;
+    border-top-left-radius: 24px;
+    border-top-right-radius:24px;
+}
+.footer-logo {
+    display: grid;
+    padding: 16px;
+    text-align: center;
+    font-family: Bebas Neue, sans-serif;
+    font-weight: 400;
+}
+.footer-logo img {
+    max-height: 100px;
+}
+.footer-info {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-auto-columns: max-content;
+    justify-content: center;
+    font-family: montserrat;
+    font-size: 18px;
+    gap: 0 100px;
+}
+
+/* HERO */
+.hero-container {
+    background-image: url(/assets/galera.jpg);
+    background-color: aqua;
+    width: 100%; /*ocupa toda a largura da tela*/
+    height: 100vh;
+    background-size:cover; /*imagem prenche o div*/
+    background-position: center;
+    margin: 72px 0;
+}
+
+/*CARROSSEL */
+.carrossel-container {
+    background-color: yellow;
+    width: 100% - 72px;
+    padding: 72px;
+}
+

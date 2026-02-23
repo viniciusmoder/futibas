@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.flex {
+    display: flex;
+}
+.flex-center {
+    align-items: center;
+}
+.gap-dynamic {
+    gap: clamp(1rem, 2vw, 2rem);
+}
+.gap-large {
+    gap: clamp(1rem, 12vw, 10rem);
+}
+.gap-icon {
+    gap: 12px;
+}
+.flex-column {
+    flex-direction: column;
+}
+.remove-link a:visited {
+    text-decoration: none;
+}
+.remove-link a:link {
+    text-decoration: none;
+}
+.grid {
+    display: grid;
+}
+.flex-2 {
+    flex: 0 66%;
+}
+.icone {
+    max-height: clamp(2rem, 5vw, 7rem);
+}
+.logo {
+    max-height: clamp(2rem, 5vw, 7rem);
+    text-align: left;
+    margin-right: 120px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.logo:hover {
+    transform: translateY(-6px);
+}
