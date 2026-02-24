@@ -101,3 +101,20 @@
     padding: 72px;
 }
 
+/* TÍTULO PRINCIPAL */
+.title {
+	font-size: 400%;
+    text-align: center;
+    font-family: Bebas neue, montserrat;
+    font-style: normal;
+    font-weight: 400;
+    color: white;
+    margin: clamp(5rem, 7vw, 10rem) clamp(5rem, 7vw, 10rem) clamp(3rem, 2vw, 10rem);
+}
+.subtitle {
+    font-size: 300%;
+    text-align: center;
+    font-family: Bebas neue, montserrat;
+    font-style: normal;
+    font-weight: 400;
+}

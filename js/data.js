@@ -1,4 +1,4 @@
-export const curiosidades = [
+export const carrossel = [
     "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
     "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
     "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
