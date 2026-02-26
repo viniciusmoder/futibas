@@ -1,5 +1,10 @@
 import {carrossel} from "./data.js"; //importa os dados pro carrossel
 
+ //CARROSSEL
+
+let carrosselIndex = 0; //controla o índice que vai aparecer na tela
+let random = []; //armazena o carrossel embaralhado
+
 //função para embaralhar o array
 function randomCarossel(arr) { 
   for (let i = arr.length - 1; i > 0; i--) {
@@ -11,15 +16,43 @@ function randomCarossel(arr) {
 
 //Renderiza o carrossel
 export function carrosselRender() {
-  const random = randomCarossel(carrossel); //chama a função para aleatorizar
+  random = randomCarossel(carrossel); //chama a função para embaralhar
   const carroselContainer = document.querySelector(".carrossel-container"); //encontra o elemento com a classe específica
 
   if (!carroselContainer) return; //retorna se não achar
 
-  carroselContainer.innerHTML += `<p class="carrossel">${random[0]}</p>`; //escreve o primeiro elemento do array randomizado
+  //escreve o primeiro elemento do array randomizado
+  carroselContainer.innerHTML += 
+  `<div class="flex flex-center gap-large">
+    <img class="arrow-left invert" src="assets/arrow.svg" title="seta">
+    <p class="texto">${random[carrosselIndex]}</p>
+    <img class="arrow-right" src="assets/arrow.svg" title="seta">
+  </div>`; 
+
+  arrowEvent(); //chama a função para possíveis cliques
 }
 
-//função para renderizar o footer
+function arrowEvent() {
+  const leftArrow = document.querySelector('.arrow-left');
+  const rightArrow = document.querySelector('.arrow-right');
+  const carrosselText = document.querySelector('.texto'); //armazena também o texto do carrossel
+
+  if (!leftArrow || !rightArrow) return;
+
+  leftArrow.addEventListener('click', () => {
+    if (carrosselIndex==0) carrosselIndex=carrossel.length-1;
+    else carrosselIndex--;
+    carrosselText.textContent = random[carrosselIndex];
+    });
+
+  rightArrow.addEventListener('click', () => {
+    if (carrosselIndex===carrossel.length-1) carrosselIndex=0;
+    else carrosselIndex++;
+    carrosselText.textContent = random[carrosselIndex];
+  });
+}
+
+//FOOTER
 export function footerRender () {
 
 const footerContainer = document.querySelector(".footer"); //cria uma variável para armazenar o primeiro elemento com a classe footer que encontrar no documento
@@ -38,6 +71,8 @@ footerContainer.innerHTML = `
     <p>Informação</p>
     <p>Todas às quintas, às 21:30: um show inesquecível!*</p>
     <p>*talvez um pouco depois das 21:30</p>
+    <a href="#top" class="remove-link"><img class="btn-return" src="assets/neifavicon.png" alt="seta" style="transform:rotate(-90deg);"></a>
   </section>
     `;
 }
+

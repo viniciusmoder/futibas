@@ -3,6 +3,9 @@ body {
     padding: 0;
     width: 100%;
 }
+html {
+    scroll-behavior: smooth;
+}
 .flex {
     display: flex;
 }
@@ -44,4 +47,21 @@ body {
 }
 .logo:hover {
     transform: translateY(-6px);
+}
+
+/* CORES */
+.vermelho {
+    background-color: var(--vermelho);
+}
+.azul {
+    background-color: var(--azul);
+}
+.preto {
+    background-color: var(--preto);
+}
+.cinza {
+    background-color: var(--cinza);
+}
+.marrom{
+    background-color: var(--marrom);
 }
