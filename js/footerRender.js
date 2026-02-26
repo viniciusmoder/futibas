@@ -1,4 +1,4 @@
-import {carrossel} from "./data.js"; //importa os dados pro carrossel
+import {cores, carrossel} from "./data.js"; //importa os dados pro carrossel
 
  //CARROSSEL
 
@@ -52,6 +52,33 @@ function arrowEvent() {
   });
 }
 
+//CARDS
+export function cardRender (atleta) {
+  const cardContainer = document.querySelector(".card-container");
+
+  if (!cardContainer) {
+    console.error("Container de cards não encontrado!");
+    return;
+  }
+
+  atleta.forEach ((atleta, index) => {
+    const atletaCard = document.createElement("div");
+    atletaCard.classList.add("card-atleta");
+
+    const atletaCardColor = cores [index % cores.length];
+    atletaCard.style.backgroundColor = `var(${atletaCardColor})`;
+
+    atletaCard.innerHTML = `
+      <img class="atleta-token" src="${atleta.imagem.src}" title="${atleta.imagem.title}" alt="${atleta.imagem.alt}">
+      <h1 class="title">${atleta.nome}</h1>
+      <p class="atleta-info">${atleta.texto}</p>
+      `;
+      cardContainer.appendChild(atletaCard);
+      console.log(atleta.nome);
+  });  
+}
+
+//cardRender(atletas);
 //FOOTER
 export function footerRender () {
 
