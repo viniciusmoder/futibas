@@ -12,6 +12,9 @@ html {
 .flex-center {
     align-items: center;
 }
+.flex-justify {
+    justify-content: center;
+}
 .gap-dynamic {
     gap: clamp(1rem, 2vw, 2rem);
 }

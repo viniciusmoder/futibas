@@ -64,14 +64,20 @@ export function cardRender (atleta) {
   atleta.forEach ((atleta, index) => {
     const atletaCard = document.createElement("div");
     atletaCard.classList.add("card-atleta");
+    atletaCard.classList.add("flex");
+    atletaCard.classList.add("flex-center");
+    atletaCard.classList.add("gap-dynamic");
+
 
     const atletaCardColor = cores [index % cores.length];
     atletaCard.style.backgroundColor = `var(${atletaCardColor})`;
 
     atletaCard.innerHTML = `
       <img class="atleta-token" src="${atleta.imagem.src}" title="${atleta.imagem.title}" alt="${atleta.imagem.alt}">
-      <h1 class="title">${atleta.nome}</h1>
-      <p class="atleta-info">${atleta.texto}</p>
+      <div class="flex flex-center flex-column">
+        <p class="atleta-title">${atleta.nome}</p>      
+        <p class="atleta-info">${atleta.texto}</p>
+      </div>
       `;
       cardContainer.appendChild(atletaCard);
       console.log(atleta.nome);
@@ -79,6 +85,7 @@ export function cardRender (atleta) {
 }
 
 //cardRender(atletas);
+
 //FOOTER
 export function footerRender () {
 

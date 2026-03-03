@@ -22,51 +22,51 @@ export const atletas = [
             "alt": "vinicius",
             "title": "mais de 10 anos organizando essa bagaça"
                 },
-        "texto": ""
+        "texto": `blablabla lorem ipsum dorum caraca moleque vegeta kaioken microfone com sopa. blablabla lorem ipsum dorum caraca moleque vegeta kaioken microfone com sopa.blablabla lorem ipsum dorum caraca moleque vegeta kaioken microfone com sopa.blablabla lorem ipsum dorum caraca moleque vegeta kaioken microfone com sopa.blablabla lorem ipsum dorum caraca moleque vegeta kaioken microfone com sopa.blablabla lorem ipsum dorum caraca moleque vegeta kaioken microfone com sopa.`
     },
     {
         "nome":"Eduardo",
         "imagem": {
-            "src": "",
-            "alt": "",
-            "title": ""
+            "src": "assets/vinicius.jpg",
+            "alt": "cuzito",
+            "title": "aiai"
                 },
-        "texto": ""
+        "texto": `blablabla lorem ipsum dorum caraca moleque vegeta kaioken microfone com sopa. blablabla lorem ipsum dorum caraca moleque vegeta kaioken microfone com sopa.blablabla lorem ipsum dorum caraca moleque vegeta kaioken microfone com sopa.blablabla lorem ipsum dorum caraca moleque vegeta kaioken microfone com sopa.blablabla lorem ipsum dorum caraca moleque vegeta kaioken microfone com sopa.blablabla lorem ipsum dorum caraca moleque vegeta kaioken microfone com sopa.`
     },
-        {
-        "nome":"Jordan",
+    {
+           "nome":"Roger",
         "imagem": {
-            "src": "",
-            "alt": "",
-            "title": ""
+            "src": "assets/vinicius.jpg",
+            "alt": "vinicius",
+            "title": "mais de 10 anos organizando essa bagaça"
                 },
-        "texto": ""
+        "texto": `blablabla lorem ipsum dorum caraca moleque vegeta kaioken microfone com sopa. blablabla lorem ipsum dorum caraca moleque vegeta kaioken microfone com sopa.blablabla lorem ipsum dorum caraca moleque vegeta kaioken microfone com sopa.blablabla lorem ipsum dorum caraca moleque vegeta kaioken microfone com sopa.blablabla lorem ipsum dorum caraca moleque vegeta kaioken microfone com sopa.blablabla lorem ipsum dorum caraca moleque vegeta kaioken microfone com sopa.`
     },
-        {
+    {
         "nome":"Marcelo",
         "imagem": {
-            "src": "",
-            "alt": "",
-            "title": ""
+            "src": "assets/vinicius.jpg",
+            "alt": "cuzito",
+            "title": "aiai"
                 },
-        "texto": ""
+        "texto": `blablabla lorem ipsum dorum caraca moleque vegeta kaioken microfone com sopa. blablabla lorem ipsum dorum caraca moleque vegeta kaioken microfone com sopa.blablabla lorem ipsum dorum caraca moleque vegeta kaioken microfone com sopa.blablabla lorem ipsum dorum caraca moleque vegeta kaioken microfone com sopa.blablabla lorem ipsum dorum caraca moleque vegeta kaioken microfone com sopa.blablabla lorem ipsum dorum caraca moleque vegeta kaioken microfone com sopa.`
     },
-        {
-        "nome":"Pablo",
+    {
+           "nome":"Jef",
         "imagem": {
-            "src": "",
-            "alt": "",
-            "title": ""
+            "src": "assets/vinicius.jpg",
+            "alt": "vinicius",
+            "title": "mais de 10 anos organizando essa bagaça"
                 },
-        "texto": ""
+        "texto": `blablabla lorem ipsum dorum caraca moleque vegeta kaioken microfone com sopa. blablabla lorem ipsum dorum caraca moleque vegeta kaioken microfone com sopa.blablabla lorem ipsum dorum caraca moleque vegeta kaioken microfone com sopa.blablabla lorem ipsum dorum caraca moleque vegeta kaioken microfone com sopa.blablabla lorem ipsum dorum caraca moleque vegeta kaioken microfone com sopa.blablabla lorem ipsum dorum caraca moleque vegeta kaioken microfone com sopa.`
     },
-        {
-        "nome":"Rodrigo",
+    {
+        "nome":"Daniel",
         "imagem": {
-            "src": "",
-            "alt": "",
-            "title": ""
+            "src": "assets/vinicius.jpg",
+            "alt": "cuzito",
+            "title": "aiai"
                 },
-        "texto": ""
+        "texto": `blablabla lorem ipsum dorum caraca moleque vegeta kaioken microfone com sopa. blablabla lorem ipsum dorum caraca moleque vegeta kaioken microfone com sopa.blablabla lorem ipsum dorum caraca moleque vegeta kaioken microfone com sopa.blablabla lorem ipsum dorum caraca moleque vegeta kaioken microfone com sopa.blablabla lorem ipsum dorum caraca moleque vegeta kaioken microfone com sopa.blablabla lorem ipsum dorum caraca moleque vegeta kaioken microfone com sopa.`
     }
 ]
