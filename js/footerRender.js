@@ -52,12 +52,12 @@ function arrowEvent() {
   });
 }
 
-//CARDS
+//CARDS ATLETAS
 export function cardRender (atleta) {
   const cardContainer = document.querySelector(".card-container");
 
   if (!cardContainer) {
-    console.error("Container de cards não encontrado!");
+    //console.error("Container de cards não encontrado!");
     return;
   }
 
@@ -85,6 +85,50 @@ export function cardRender (atleta) {
 }
 
 //cardRender(atletas);
+
+//CARDS TORNEIOS
+export function torneioRender (torneio) {
+  const cardContainerTorneio = document.querySelector(".card-container-torneio");
+
+  if (!cardContainerTorneio) {
+   // console.error("Container do torneio não encontrado!");
+    return;
+  }
+
+  torneio.forEach ((torneio, index) => {
+    const torneioCard = document.createElement("div");
+    torneioCard.classList.add("card-torneio");
+    torneioCard.classList.add("flex");
+    torneioCard.classList.add("flex-center");
+    torneioCard.classList.add("gap-dynamic");
+
+
+    const torneioCardColor = cores [index % cores.length];
+    torneioCard.style.backgroundColor = `var(${torneioCardColor})`;
+
+    let team = "";
+
+    for (let i=0; i<torneio.jogadores.length; i++) {
+      team += (torneio.jogadores[i] + ", ");
+      console.log(torneio.jogadores[i]);
+      console.log(team);
+    }
+
+    torneioCard.innerHTML = `
+      <div class="flex flex-center flex-column torneio-info">
+        <p class="text">${torneio.nome}</p>
+        <p class="text">${torneio.data}</p>
+        <p class="text">Campeão: ${torneio.campeao} (${team})</p>
+        <p class="text">Melhor Jogador: ${torneio.melhor}</p>
+        <p class="text">Artilheiro: ${torneio.artilheiro}</p>
+        <p class="text">Líder de Assistências: ${torneio.assistencias}</p>
+        <p class="text">Melhor Goleiro: ${torneio.goleiro}</p>
+      </div>
+      `;
+      cardContainerTorneio.appendChild(torneioCard);
+      console.log(torneio.nome);
+  });  
+}
 
 //FOOTER
 export function footerRender () {

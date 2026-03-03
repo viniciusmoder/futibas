@@ -6,7 +6,7 @@
     background-color: var(--azul);
 }
 .torneios {
-    background-color: var(--marrom);
+    background-color: var(--vermelho);
 }
 .contato {
     background-color: var(--cinza);
@@ -110,6 +110,14 @@
     padding: 0 72px;
 }
 
+.hero-torneios {
+    margin: 72px 0;
+    border-radius: 24px;
+    width: 100%; /*ocupa toda a largura da tela*/
+    height: 100vh;
+    padding: 0 72px;
+}
+
 /*CARROSSEL */
 .carrossel-container {
     background-color: rgb(199, 199, 29);
@@ -181,6 +189,35 @@
     font-weight: 200;
     font-size: clamp(1rem, 2.5vw, 3rem);
     color: white;
+}
+
+/* TORNEIOS */
+.card-torneio {
+    width: 100%;
+    height: fit-content;
+    border-radius: 24px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    overflow: hidden;
+    position: relative;
+    padding: 24px;
+}
+.card-torneio:hover {
+    transform: translateY(-6px);
+}
+
+.card-container-torneio {
+    grid-template-columns: 50% 50%;
+    background-color: white;
+    border-radius: 24px;
+    margin: 24px 72px;
+    padding: 24px;
+    margin-bottom: 24px;
+    gap: 24px
+}
+
+.text.torneio-info {
+
+    text-align: justify;
 }
 
 /* ATLETAS */

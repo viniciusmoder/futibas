@@ -1,9 +1,11 @@
-import { footerRender, carrosselRender, cardRender } from "./footerRender.js";
-import { atletas } from "./data.js";
+import { footerRender, carrosselRender, cardRender, torneioRender } from "./footerRender.js";
+import { atletas, torneios } from "./data.js";
 
 carrosselRender();
 
 cardRender (atletas);
+
+torneioRender (torneios);
 
 footerRender();
 
