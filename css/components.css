@@ -194,12 +194,11 @@
 /* TORNEIOS */
 .card-torneio {
     width: 100%;
-    height: fit-content;
+    max-height: 300px;
     border-radius: 24px;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
     overflow: hidden;
     position: relative;
-    padding: 24px;
 }
 .card-torneio:hover {
     transform: translateY(-6px);
@@ -215,9 +214,47 @@
     gap: 24px
 }
 
-.text.torneio-info {
-
+.torneio-text {
+    display: none;
+    color: white;
     text-align: justify;
+    overflow: auto;
+    text-indent: 2em;
+    font-size: clamp(0.25rem, 1.25vw, 3rem);
+    font-family: roboto;
+}
+
+.torneio-token {
+    max-width: 400px;
+   /* transform: translateY(10%)*/
+}
+
+.torneio-token-clique {
+   max-width: 800px;
+}
+
+.torneio-title {
+    font-size: 400%;
+    text-align: center;
+    font-family: Bebas neue, montserrat;
+    font-style: normal;
+    font-weight: 400;
+    color: white;
+    margin: 0 clamp(5rem, 7vw, 10rem) 0 clamp(3rem, 2vw, 10rem);
+}
+
+.card-torneio.card-torneio-clique {
+    max-height: 500px;
+    width: 100%;
+    border-radius: 24px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    overflow: hidden;
+    position: relative;
+    padding-right: 48px;
+}
+
+.torneio-text-clique {
+    display: block;
 }
 
 /* ATLETAS */
@@ -265,6 +302,9 @@
     text-align: justify;
     overflow: auto;
     text-indent: 2em;
+    font-size: clamp(0.25rem, 1.25vw, 3rem);
+    font-family: roboto;
+    text-indent: 2vw;
 }
 .atleta-info-clique {
     display: block;

@@ -54,7 +54,7 @@ export const atletas = [
     {
            "nome":"Jef",
         "imagem": {
-            "src": "assets/vinicius.jpg",
+            "src": "assets/jeff.jpg",
             "alt": "vinicius",
             "title": "mais de 10 anos organizando essa bagaça"
                 },
@@ -63,7 +63,7 @@ export const atletas = [
     {
         "nome":"Daniel",
         "imagem": {
-            "src": "assets/vinicius.jpg",
+            "src": "assets/daniel.jpg",
             "alt": "cuzito",
             "title": "aiai"
                 },
@@ -73,54 +73,71 @@ export const atletas = [
 
 export const torneios = [
     {
+        "cover": {
+            "src": "assets/toneio1.jpeg",
+            "alt": "1ª Edição",
+            "title": "podia ter uma foto melhor, né?"
+        },
         "id": 1,
         "nome": "1ª Edição",
         "data": "30/01/2025",
-        "campeao": "time azul",
-        "jogadores": [
-            "Charlie",
-            "Pablo",
-            "Roger",
-            "Andrei",
-            "Rodrigo"
-        ],
+        "campeao": "Time Azul (Charile, Pablo, Andrei, Roger e Linguiça)",
         "melhor": "Rodrigo",
-        "artilheiro": "Eduardo",
-        "assistencias": "Vinicius",
-        "goleiro": "Schons"
+        "artilheiro": "Rodrigo",
+        "assistencias": "Eduardo",
+        "goleiro": "Andrei"
     },
-        {
+    {
+        "cover": {
+            "src": "assets/toneio1.jpeg",
+            "alt": "1ª Edição",
+            "title": "podia ter uma foto melhor, né?"
+        },        
         "id": 2,
         "nome": "2ª Edição",
         "data": "30/01/2025",
         "campeao": "time azul",
-        "jogadores": [
-            "Charlie",
-            "Pablo",
-            "Roger",
-            "Andrei",
-            "Rodrigo"
-        ],
-        "melhor": "Rodrigo",
+        "melhor": "",
         "artilheiro": "Eduardo",
-        "assistencias": "Vinicius",
-        "goleiro": "Schons"
+        "assistencias": "Rodrigo",
+        "goleiro": ""
     },
-        {
+    {
+        "cover": {
+            "src": "assets/toneio1.jpeg",
+            "alt": "1ª Edição",
+            "title": "podia ter uma foto melhor, né?"
+        },
         "id": 3,
         "nome": "3ª Edição",
         "data": "30/01/2025",
         "campeao": "time azul",
-        "jogadores": [
-            "Charlie",
-            "Pablo",
-            "Roger",
-            "Andrei",
-            "Rodrigo"
-        ],
-        "melhor": "Rodrigo",
+        "melhor": "Roger",
         "artilheiro": "Eduardo",
-        "assistencias": "Vinicius",
+        "assistencias": "Rodrigo",
         "goleiro": "Schons"
+    }
+]
+
+export const tabela = [
+    {
+        "nome": "Vinícius",
+        "torneios": 3,
+        "titulos": 0,
+        "gols": 4,
+        "assistencias": 2,
+        "melhor": 0,
+        "lider": 0,
+        "goleiro": 0   
+    },
+        {
+        "nome": "Vinícius",
+        "torneios": 3,
+        "titulos": 0,
+        "gols": 4,
+        "assistencias": 2,
+        "melhor": 0,
+        "lider": 0,
+        "goleiro": 0   
     }
 ]

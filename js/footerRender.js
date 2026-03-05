@@ -106,28 +106,51 @@ export function torneioRender (torneio) {
     const torneioCardColor = cores [index % cores.length];
     torneioCard.style.backgroundColor = `var(${torneioCardColor})`;
 
-    let team = "";
-
-    for (let i=0; i<torneio.jogadores.length; i++) {
-      team += (torneio.jogadores[i] + ", ");
-      console.log(torneio.jogadores[i]);
-      console.log(team);
-    }
-
     torneioCard.innerHTML = `
-      <div class="flex flex-center flex-column torneio-info">
-        <p class="text">${torneio.nome}</p>
-        <p class="text">${torneio.data}</p>
-        <p class="text">Campeão: ${torneio.campeao} (${team})</p>
-        <p class="text">Melhor Jogador: ${torneio.melhor}</p>
-        <p class="text">Artilheiro: ${torneio.artilheiro}</p>
-        <p class="text">Líder de Assistências: ${torneio.assistencias}</p>
-        <p class="text">Melhor Goleiro: ${torneio.goleiro}</p>
+    <div class="flex flex-center gap-dynamic">
+      <img class="torneio-token" src="${torneio.cover.src}" alt="${torneio.cover.alt}" title="${torneio.cover.title}">
+      <div class="flex flex-center flex-column">
+        <p class="torneio-title">${torneio.nome}</p>
+        <div class="torneio-text flex-flex-center flex-column">
+          <p><strong>${torneio.data}</strong></p>
+          <p><strong>Campeão: </strong>${torneio.campeao}</p>
+          <p><strong>Melhor Jogador: </strong>${torneio.melhor}</p>
+          <p><strong>Artilheiro: </strong>${torneio.artilheiro}</p>
+          <p><strong>Líder de Assistências: </strong>${torneio.assistencias}</p>
+          <p><strong>Melhor Goleiro: </strong>${torneio.goleiro}</p>
+        </div>
       </div>
+    </div>
       `;
       cardContainerTorneio.appendChild(torneioCard);
-      console.log(torneio.nome);
   });  
+}
+
+//TABELA
+export function tableRender (tabela) {
+  const table = document.querySelector(".tabela-container");
+
+  if (!table) {
+    console.log("sem tabela");
+    return;
+  } 
+
+  tabela.forEach((tabela) => {
+    const tableRow = document.createElement("tr");
+    console.log("teste");
+
+    tableRow.innerHTML += `
+      <td>${tabela.nome}</td>
+      <td>${tabela.torneios}</td>
+      <td>${tabela.titulos}</td>
+      <td>${tabela.gols}</td>
+      <td>${tabela.assistencias}</td>
+      <td>${tabela.melhor}</td>
+      <td>${tabela.lider}</td>
+      <td>${tabela.goleiro}</td>
+    `;
+    table.appendChild(tableRow);
+  });
 }
 
 //FOOTER
