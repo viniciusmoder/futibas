@@ -130,14 +130,10 @@ export function torneioRender (torneio) {
 export function tableRender (tabela) {
   const table = document.querySelector(".tabela-container");
 
-  if (!table) {
-    console.log("sem tabela");
-    return;
-  } 
+  if (!table) return;
 
   tabela.forEach((tabela) => {
     const tableRow = document.createElement("tr");
-    console.log("teste");
 
     tableRow.innerHTML += `
       <td>${tabela.nome}</td>
@@ -146,6 +142,7 @@ export function tableRender (tabela) {
       <td>${tabela.gols}</td>
       <td>${tabela.assistencias}</td>
       <td>${tabela.melhor}</td>
+      <td>${tabela.artilheiro}</td>
       <td>${tabela.lider}</td>
       <td>${tabela.goleiro}</td>
     `;

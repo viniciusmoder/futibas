@@ -127,6 +127,7 @@ export const tabela = [
         "gols": 4,
         "assistencias": 2,
         "melhor": 0,
+        "artilheiro": 0,
         "lider": 0,
         "goleiro": 0   
     },
@@ -137,6 +138,18 @@ export const tabela = [
         "gols": 4,
         "assistencias": 2,
         "melhor": 0,
+        "artilheiro": 0,
+        "lider": 0,
+        "goleiro": 0   
+    },
+            {
+        "nome": "Vinícius",
+        "torneios": 3,
+        "titulos": 0,
+        "gols": 4,
+        "assistencias": 2,
+        "melhor": 0,
+        "artilheiro": 0,
         "lider": 0,
         "goleiro": 0   
     }

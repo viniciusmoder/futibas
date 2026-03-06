@@ -91,6 +91,34 @@
     gap: 0 100px;
 }
 
+/* TABELA */
+.tabela-container-externo {
+    background-color: white;
+    margin: 24px 72px;
+    padding: 24px;
+    border-radius: 24px;
+}
+.tabela-container {
+    background-color: lightcoral;
+    padding: 24px;
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 16px;
+}
+.tabela-container th, .tabela-container td {
+    text-align: center;
+    vertical-align: middle;
+    border: 2px solid white;
+    border-radius: 24px;
+    padding: 8px;
+    color: white;
+}
+.tabela-texto {
+    color: white;
+    font-size: clamp(0.25rem, 1.25vw, 3rem);
+    font-family: roboto;
+}
+
 /* HERO */
 .hero-container {
     background-image: url(/assets/galera.jpg);
@@ -112,6 +140,14 @@
 
 .hero-torneios {
     margin: 72px 0;
+    border-radius: 24px;
+    width: 100%; /*ocupa toda a largura da tela*/
+    height: 100vh;
+    padding: 0 72px;
+}
+
+.hero-contato {
+        margin: 72px 0;
     border-radius: 24px;
     width: 100%; /*ocupa toda a largura da tela*/
     height: 100vh;
@@ -230,7 +266,7 @@
 }
 
 .torneio-token-clique {
-   max-width: 800px;
+   max-width: 700px;
 }
 
 .torneio-title {
